@@ -1,5 +1,5 @@
 import React from 'react';
-import Github from "./images/github.png";
+import PortfolioItem from "../PortfolioItem";
 import Avo from "./images/avo.jpg";
 import Burger from "./images/burger-logger.jpg";
 import Chico from "./images/chico.jpg";
@@ -13,96 +13,76 @@ import Scheduler from "./images/workday-scheduler.jpg";
 
 function Portfolio() {
     return (
-        <section class="row custom_row">
-            <article class="center_col portfolio_col">
-                <section class="row custom_row">
+        <section className="row custom_row">
+            <article className="center_col portfolio_col">
+                <section className="row custom_row">
                     <h2>Portfolio</h2>
                 </section>
                 <hr/>
-                <section class="row custom_row">
-                    <div class="col-lg-6">
-                        <h4>Weather Dashboard</h4>
-                        <a class="portfolio_git_icon" href="https://github.com/tmkeller/weather-dashboard">
-                            <img src={ Github } alt="Github icon"/>
-                        </a>
-                        <a href="https://tmkeller.github.io/weather-dashboard/">
-                            <img class="portfolio_image" src={ Weather } alt="Weather dashboard"/>
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <h4>Turn the Tables</h4>
-                        <a class="portfolio_git_icon" href="https://github.com/tmkeller/eightysixed-app">
-                            <img src={ Github } alt="Github icon"/>
-                        </a>
-                        <a href="https://peaceful-gorge-36427.herokuapp.com/" >
-                            <img class="portfolio_image" src={ TurnTables } alt="Turn the Tables"/>
-                        </a>
-                    </div>
+                <section className="row custom_row">
+                    <PortfolioItem 
+                        title="Weather Dashboard" 
+                        githubURL="https://github.com/tmkeller/weather-dashboard" 
+                        deployed="https://tmkeller.github.io/weather-dashboard/"
+                        image={ Weather }
+                    />
+                    <PortfolioItem 
+                        title="Turn the Tables" 
+                        githubURL="https://github.com/tmkeller/eightysixed-app" 
+                        deployed="https://peaceful-gorge-36427.herokuapp.com/"
+                        image={ TurnTables }
+                    />
                 </section>
-                <section class="row custom_row">
-                    <div class="col-lg-6">
-                        <h4>Online Quiz</h4>
-                        <a class="portfolio_git_icon" href="https://github.com/tmkeller/online-quiz">
-                            <img src={ Github } alt="Github icon"/>
-                        </a>
-                        <a href="https://tmkeller.github.io/online-quiz/" >
-                            <img class="portfolio_image" src={ Quiz } alt="Online quiz"/>
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <h4>Workday Scheduler</h4>
-                        <a class="portfolio_git_icon" href="https://github.com/tmkeller/workday-scheduler">
-                            <img src={ Github } alt="Github icon"/>
-                        </a>
-                        <a href="https://tmkeller.github.io/workday-scheduler/" >
-                            <img class="portfolio_image" src={ Scheduler } alt="Workday scheduler"/>
-                        </a>
-                    </div>
+                <section className="row custom_row">
+                    <PortfolioItem 
+                        title="Online Quiz" 
+                        githubURL="https://github.com/tmkeller/online-quiz" 
+                        deployed="https://tmkeller.github.io/online-quiz/"
+                        image={ Quiz }
+                    />
+                    <PortfolioItem 
+                        title="Workday Scheduler" 
+                        githubURL="https://github.com/tmkeller/workday-scheduler" 
+                        deployed="https://tmkeller.github.io/workday-scheduler/"
+                        image={ Scheduler }
+                    />
                 </section>
-                <section class="row custom_row">
-                    <div class="col-lg-6">
-                        <h4>NEBHE</h4>
-                        <a href="https://nebhe.org/" >
-                            <img class="portfolio_image" src={ NEBHE } alt="NEBHE"/>
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <h4>American Vegetable Oil</h4>
-                        <a href="https://www.americanvegoil.com/" >
-                            <img class="portfolio_image" src={ Avo } alt="AVO"/>
-                        </a>
-                    </div>
+                <section className="row custom_row">
+                    <PortfolioItem 
+                        title="NEBHE"
+                        deployed="https://nebhe.org/"
+                        image={ NEBHE }
+                    />
+                    <PortfolioItem 
+                        title="American Vegetable Oil"
+                        deployed="https://www.americanvegoil.com/"
+                        image={ Avo }
+                    />
                 </section>
-                <section class="row custom_row">
-                    <div class="col-lg-6">
-                        <h4>CSU Chico Today</h4>
-                        <a href="https://today.csuchico.edu/" >
-                            <img class="portfolio_image" src={ Chico } alt="CSU Chico"/>
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <h4>John Livesay</h4>
-                        <a href="https://johnlivesay.com/" >
-                            <img class="portfolio_image" src={ Livesay } alt="John Livesay"/>
-                        </a>
-                    </div>
+                <section className="row custom_row">
+                    <PortfolioItem 
+                        title="CSU Chico"
+                        deployed="https://today.csuchico.edu/"
+                        image={ Chico }
+                    />
+                    <PortfolioItem 
+                        title="John Livesay"
+                        deployed="https://johnlivesay.com/"
+                        image={ Livesay }
+                    />
                 </section>
-                <section class="row custom_row">
-                    <div class="col-lg-6">  
-                        <h4>My Rehab Exercise</h4>
-                        <a href="https://myrehabexercise.com/" >
-                            <img class="portfolio_image" src={ MRE } alt="My Rehab Exercise"/>
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <h4>Burger Logger</h4>
-                        <a class="portfolio_git_icon" href="https://github.com/tmkeller/Handlebars-Burger-Logger">
-                            <img src={ Github } alt="Github icon"/>
-                        </a>
-                        <a href="https://handlebars-burger-logger.herokuapp.com/" >
-                            <img class="portfolio_image" src={ Burger } alt="Burger Logger"/>
-                        </a>
-                    </div>
+                <section className="row custom_row">
+                    <PortfolioItem 
+                        title="My Rehab Exercise"
+                        deployed="https://myrehabexercise.com/"
+                        image={ MRE }
+                    />
+                    <PortfolioItem 
+                        title="Burger Logger"
+                        deployed="https://handlebars-burger-logger.herokuapp.com/"
+                        image={ Burger }
+                        githubURL={ "https://github.com/tmkeller/Handlebars-Burger-Logger" }
+                    />
                 </section>
             </article>
         </section>
