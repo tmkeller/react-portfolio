@@ -1,4 +1,5 @@
 import React from 'react';
+import "./style.css";
 import PortfolioItem from "../PortfolioItem";
 import Avo from "./images/avo.jpg";
 import Burger from "./images/burger-logger.jpg";

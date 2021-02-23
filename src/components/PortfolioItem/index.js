@@ -1,4 +1,5 @@
 import React from 'react';
+import "./style.css";
 import Github from "./images/github.png";
 
 function PortfolioItem( props ) {
