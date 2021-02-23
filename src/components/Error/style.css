@@ -1,0 +1,18 @@
+.four_oh_four, .page_not_found {
+    width: 100%;
+    text-align:center;
+}
+
+.four_oh_four {
+    font-size: 80px;
+}
+
+.page_not_found {
+    font-size: 50px;
+}
+
+.error_text {
+    margin-top: 50px;
+    font-size: 30px;
+    text-align: center;
+}
