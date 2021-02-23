@@ -1,14 +1,14 @@
 import './App.css';
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
+import "./"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Tim Keller's Portfolio Page</h1>
-      </header>
-      <p>
-        Welcome to Tim Keller's portfolio page.
-      </p>
+      <NavBar/>
+      
+      <Footer/>
     </div>
   );
 }

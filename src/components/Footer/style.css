@@ -1,0 +1,176 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    color: white;
+    background-color: #272727;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    background-repeat: repeat;
+}
+
+.main_content {
+    padding: 60px 35px;
+}
+
+h1, h2 {
+    float: left;
+    margin-left: 11px;
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 27px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 21px;
+    display:inline-block;
+    float:left;
+}
+
+a:link {
+    color: #eeeeee;
+}
+
+a:visited {
+    color: #aaaaaa;
+}
+
+a:hover {
+    color: #dddddd;
+}
+
+a:active {
+    color: #cccccc;
+}
+
+hr {
+    background-color: white;
+    margin: 0 11px 12px 11px;
+}
+
+.custom_row {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 22px;
+}
+
+.profile_pic {
+    width: 250px;
+    float: left;
+    margin: 0 12px 16px 0;
+}
+
+.icon_link {
+    margin: 24px 6px 0 6px;
+    display: inline-block;
+}
+
+.portfolio_git_icon {
+    display:block;
+    float: right;
+}
+
+.portfolio_git_icon img {
+    width: 30px;
+}
+
+.center_col {
+    background-color: #000000;
+    padding: 20px 6px;
+    border-radius: 6px;
+    box-shadow: 4px 4px 20px -1px rgba(131,131,131,1);
+    -webkit-box-shadow: 4px 4px 20px -1px rgba(131,131,131,1);
+    -moz-box-shadow: 4px 4px 20px -1px rgba(131,131,131,1);
+}
+
+.aligned_content {
+    padding: 0 10px;
+}
+
+.form_div {
+    padding: 0 8px;
+    width: 85%;
+    max-width: 800px;
+}
+
+.form_button {
+    margin-top: 10px;
+    background-color: red;
+    border: 0;
+}
+
+.portfolio_image {
+    margin: 16px 12px;
+    box-shadow: 4px 4px 5px 0px  rgba(87,87,87,1);
+    -webkit-box-shadow: 4px 4px 5px 0px  rgba(87,87,87,1);
+    -moz-box-shadow: 4px 4px 5px 0px  rgba(87,87,87,1);
+    transition-duration: 0.5s;
+}
+
+.portfolio_image:hover {
+    box-shadow: 4px 4px 20px -1px rgba(148,129,81,1);
+    -webkit-box-shadow: 4px 4px 20px -1px rgba(148,129,81,1);
+    -moz-box-shadow: 4px 4px 20px -1px rgba(148,129,81,1);
+}
+
+.white_band {
+    height: 4px;
+    background-color: #ffffff;
+}
+
+.portfolio_col {
+    margin-bottom: 20px;
+}
+
+footer {
+    height: 50px;
+    background-color: #363c42;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    text-align: center;
+    display: block;
+    margin: 7px auto;
+    font-size: 10px;
+}
+
+footer p a {
+    text-decoration: underline;
+}
+
+@media all and (max-width: 575px) {
+    .center_col {
+        margin: 0 auto;
+    }
+
+    .main_content {
+        padding: 60px 4px;
+    }
+
+    .form_div {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 991px) {
+    .portfolio_col {
+        width: 425px;
+    }    
+}
+
+@media all and (min-width: 992px) {
+    .portfolio_col {
+        width: 800px;
+    }
+}
