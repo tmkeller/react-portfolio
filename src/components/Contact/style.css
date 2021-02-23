@@ -1,0 +1,11 @@
+.form_div {
+    padding: 0 8px;
+    width: 85%;
+    max-width: 800px;
+}
+
+.form_button {
+    margin-top: 10px;
+    background-color: red;
+    border: 0;
+}
