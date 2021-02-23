@@ -1,7 +1,10 @@
 import React from 'react';
 import "./style.css";
+import { Link, useLocation } from "react-router-dom";
 
 function NavBar() {
+
+    const location = useLocation();
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <h1>Timothy Michael Keller</h1>
@@ -10,15 +13,15 @@ function NavBar() {
             </button>
             <section className="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul className="navbar-nav">
-                    <li className="nav-item">
-                        <a className="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li className="nav-item active">
-                        <a className="nav-link" href="index.html">About<span className="sr-only">(current)</span></a>
-                    </li>
+                    <Link to="/contact" className={ location.pathname === "/contact" ? "nav-link active" : "nav-link" }>
+                        Contact
+                    </Link>
+                    <Link to="/portfolio" className={ location.pathname === "/portfolio" ? "nav-link active" : "nav-link" }>
+                        Portfolio
+                    </Link>
+                    <Link to="/" className={ location.pathname === "/" ? "nav-link active" : "nav-link" }>
+                        About
+                    </Link>
                 </ul>
             </section>
         </nav>
