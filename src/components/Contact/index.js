@@ -48,7 +48,7 @@ function Contact() {
                     </div>
                     <button onClick={ handleInputSubmit } type="submit" className="btn btn-primary form_button">Submit</button>
                 </form>
-                <p>Feel free to contact me at timothy.m.keller@gmail.com as well!</p>
+                <p className="text_email">Feel free to contact me at timothy.m.keller@gmail.com as well!</p>
             </article>
         </section>  
     )
