@@ -12,8 +12,11 @@ function PortfolioItem( props ) {
                 </a>
                 : null
             }
-            <a href={ props.deployed }>
+            <a className="project_link" href={ props.deployed }>
                 <img className="portfolio_image" src={ props.image } alt={ props.title }/>
+                <div className="text_overlay">
+                    <p>{ props.description }</p>
+                </div>
             </a>
         </div>
     )
