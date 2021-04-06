@@ -44,6 +44,7 @@ function About() {
                     <a className="icon_link" href="downloads/TimothyKellerWebDevResume02052021.pdf">
                         <img src={ Resume } alt="Resume icon"/>
                     </a>
+                    <p>Timothy.M.Keller@gmail.com</p>
                     <p>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
                 </div>
             </article>
